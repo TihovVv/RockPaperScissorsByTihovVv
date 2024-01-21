@@ -6,7 +6,6 @@ scissors = 'Scissors'
 player_move = input('Choose [r]ock, [p]aper, [s]cissors: ')
 computer_move = ''
 
-#player choice logic
 if player_move == 'r':
     player_move = rock
 elif player_move == 'p':
@@ -16,9 +15,8 @@ elif player_move == 's':
 else:
     raise SystemExit('Invalid input. Try again...')
 
-#computer logic
-computer_random_number = random.randint(1, 3) #random.randit(start, stop+1) -> в дадения диапазон компютъра избира произволна цифра
-    #conditonal statement for chosing by computer random num which equal toa folowing statements
+computer_random_number = random.randint(1, 3) 
+
 if computer_random_number == 1:
     computer_move = rock
 elif computer_random_number == 2:
